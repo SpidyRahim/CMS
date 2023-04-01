@@ -33,12 +33,17 @@ mysqli_close($conn);
     <title>Account Creation</title>
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #00203FFF;
         }
 
         .container {
             max-width: 600px;
             margin-top: 100px;
+        }
+
+        .card {
+            background-color: #ADEFD1FF;
+            border-radius: 15px;
         }
 
         .message {
@@ -52,13 +57,15 @@ mysqli_close($conn);
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h3>Account Creation</h3>
+                <h3>
+                    <center>Account Creation</center>
+                </h3>
             </div>
             <div class="card-body">
                 <p class="message">
                     <?php echo $message; ?>
                 </p>
-                <a href="index.php" class="btn btn-primary btn-block">Back to Home</a>
+                <a href="signin.php" class="btn btn-primary btn-block">Back to Sing In</a>
             </div>
         </div>
     </div>
